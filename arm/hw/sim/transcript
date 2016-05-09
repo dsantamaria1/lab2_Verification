@@ -1,0 +1,1593 @@
+# //  Questa Sim
+# //  Version 10.0c linux Jul 21 2011
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -assertdebug -do run.do -voptargs=+acc tb 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "a25_icache".
+# ** Note: (vopt-143) Recognized 1 FSM in module "a25_decode".
+# ** Note: (vopt-143) Recognized 1 FSM in module "a25_dcache".
+# ** Note: (vopt-143) Recognized 1 FSM in module "a25_wishbone".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "uart".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "tb_uart".
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# do run.do 
+# ** Warning: (vsim-8664) The option "-enable" of command "assertion fail" is deprecated. Use "assertion enable" command instead.
+# 
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+# Simulation Breakpoint: 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+# MACRO ./run.do PAUSED at line 4
+atv log -enable tb.u_wb_sva
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+add wave /tb/u_wb_sva/req_ack_write
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+add atv /tb/u_wb_sva/req_ack_write/req_ack_write 3727500 ps
+add atv /tb/u_wb_sva/req_ack_write/req_ack_write 11802500 ps
+add atv /tb/u_wb_sva/req_ack_write/req_ack_write 3727500 ps
+# Causality operation skipped due to absense of debug database file
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+add atv /tb/u_wb_sva/req_ack_write/req_ack_write 3727500
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+run
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+restart
+# Loading work.tb(fast)
+# Loading work.system(fast)
+# Loading work.clocks_resets(fast)
+# Loading work.a25_core(fast)
+# Loading work.a25_fetch(fast)
+# Loading work.a25_icache(fast)
+# Loading work.generic_sram_line_en(fast)
+# Loading work.generic_sram_byte_en(fast)
+# Loading work.a25_decode(fast)
+# Loading work.a25_decompile(fast)
+# Loading work.a25_execute(fast)
+# Loading work.a25_barrel_shift(fast)
+# Loading work.a25_alu(fast)
+# Loading work.a25_multiply(fast)
+# Loading work.a25_register_bank(fast)
+# Loading work.a25_mem(fast)
+# Loading work.a25_dcache(fast)
+# Loading work.a25_write_back(fast)
+# Loading work.a25_wishbone(fast)
+# Loading sv_std.std
+# Loading work.FSMProperties
+# Loading work.module4SVA(fast)
+# Loading work.a25_coprocessor(fast)
+# Loading work.eth_top(fast)
+# Loading work.eth_miim(fast)
+# Loading work.eth_clockgen(fast)
+# Loading work.eth_shiftreg(fast)
+# Loading work.eth_outputcontrol(fast)
+# Loading work.eth_registers(fast)
+# Loading work.eth_register(fast)
+# Loading work.eth_register(fast__1)
+# Loading work.eth_register(fast__2)
+# Loading work.eth_register(fast__3)
+# Loading work.eth_register(fast__4)
+# Loading work.eth_register(fast__5)
+# Loading work.eth_register(fast__6)
+# Loading work.eth_register(fast__7)
+# Loading work.eth_register(fast__8)
+# Loading work.eth_register(fast__9)
+# Loading work.eth_register(fast__10)
+# Loading work.eth_register(fast__11)
+# Loading work.eth_register(fast__12)
+# Loading work.eth_register(fast__13)
+# Loading work.eth_register(fast__14)
+# Loading work.eth_maccontrol(fast)
+# Loading work.eth_receivecontrol(fast)
+# Loading work.eth_transmitcontrol(fast)
+# Loading work.eth_txethmac(fast)
+# Loading work.eth_txcounters(fast)
+# Loading work.eth_txstatem(fast)
+# Loading work.eth_crc(fast)
+# Loading work.eth_random(fast)
+# Loading work.eth_rxethmac(fast)
+# Loading work.eth_rxstatem(fast)
+# Loading work.eth_rxcounters(fast)
+# Loading work.eth_rxaddrcheck(fast)
+# Loading work.eth_wishbone(fast)
+# Loading work.eth_spram_256x32(fast)
+# Loading work.generic_sram_byte_en(fast__1)
+# Loading work.eth_fifo(fast)
+# Loading work.eth_macstatus(fast)
+# Loading work.generic_iobuf(fast)
+# Loading work.boot_mem(fast)
+# Loading work.generic_sram_byte_en(fast__2)
+# Loading work.uart(fast)
+# Loading work.test_module(fast)
+# Loading work.timer_module(fast)
+# Loading work.interrupt_controller(fast)
+# Loading work.main_mem(fast)
+# Loading work.wishbone_arbiter(fast)
+# Loading work.tb_uart(fast)
+# Loading work.wb_sva(fast)
+# Loading work.Wrapper(fast)
+# Loading work.dumpvcd(fast)
+# Thread view logging enabled for o_wb_adress_valid
+# Thread view logging enabled for i_wb_dat_valid
+# Thread view logging enabled for o_wb_dat_valid
+# Thread view logging enabled for req_ack_read
+# Thread view logging enabled for req_ack_write
+run -all
+# Test ethmac_tx, log file tests.log
+# Load boot memory from ../tests/ethmac_tx.mem
+# Read in 134 lines
+# ** Error: Assertion error.
+#    Time: 3752500 ps Started: 3727500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 4077500 ps Started: 4052500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5302500 ps Started: 5277500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 5627500 ps Started: 5602500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 6852500 ps Started: 6827500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 7177500 ps Started: 7152500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8402500 ps Started: 8377500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 8727500 ps Started: 8702500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 9952500 ps Started: 9927500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 10277500 ps Started: 10252500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11502500 ps Started: 11477500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# ** Error: Assertion error.
+#    Time: 11827500 ps Started: 11802500 ps  Scope: tb.u_wb_sva.req_ack_write File: ../vlog/tb/test.sv Line: 51 Expr: o_wb_cyc&o_wb_stb&o_wb_we
+# 
+# ----------------------------------------------------------------------------
+# Amber Core
+#          User         FIRQ         IRQ        > SVC
+# r0       0x2800129c
+# r1       0x000001c4
+# r2       0x000001c4
+# r3       0x2800129e
+# r4       0x00000008
+# r5       0x00000000
+# r6       0x00080000
+# r7       0x00080000
+# r8       0x00080000   0xdeadbeef 
+# r9       0x00000000   0xdeadbeef 
+# r10      0x00000011   0xdeadbeef 
+# r11      0xf0000000   0xdeadbeef 
+# r12      0x0000ffff   0xdeadbeef 
+# r13      0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r14 (lr) 0xdeadbeef   0xdeadbeef   0xdeadbeef   0xdeadbeef
+# r15 (pc) 0x000000e4
+# 
+# Status Bits: N=0, Z=1, C=1, V=0, IRQ Mask 1, FIRQ Mask 1, Mode =     Supervisor
+# ----------------------------------------------------------------------------
+# 
+# ++++++++++++++++++++
+# Passed ethmac_tx 3923 ticks
+# ++++++++++++++++++++
+# ** Note: $finish    : ../vlog/tb/tb.v(506)
+#    Time: 98052500 ps  Iteration: 4  Instance: /tb
+# 1
+# Break in Module tb at ../vlog/tb/tb.v line 506
+coverage report -assert -detail -r /
+# 
+# ASSERTION RESULTS:
+# -------------------------------------------------------
+# Name                 File(Line)           Failure Pass 
+#                                           Count   Count 
+# -------------------------------------------------------
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_IDLE_ValidTransition
+#                      ../../../SVA/module4SVA.sv(21)       0  1290
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_BURST1_ValidTransition
+#                      ../../../SVA/module4SVA.sv(24)       0     0
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_BURST2_ValidTransition
+#                      ../../../SVA/module4SVA.sv(27)       0     0
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_BURST3_ValidTransition
+#                      ../../../SVA/module4SVA.sv(30)       0     0
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_WAIT_ACK_ValidTransition1
+#                      ../../../SVA/module4SVA.sv(33)       0  1398
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_WAIT_ACK_ValidTransition2
+#                      ../../../SVA/module4SVA.sv(36)       0  1233
+# /tb/u_system/u_amber/u_wishbone/wrp/WB_IDLE_TimeOut
+#                      ../../../SVA/module4SVA.sv(40)       0  3920
+# /tb/u_wb_sva/o_wb_adress_valid
+#                      ../vlog/tb/test.sv(40)       0  2685
+# /tb/u_wb_sva/i_wb_dat_valid
+#                      ../vlog/tb/test.sv(42)       0  1227
+# /tb/u_wb_sva/o_wb_dat_valid
+#                      ../vlog/tb/test.sv(44)       0    79
+# /tb/u_wb_sva/req_ack_read
+#                      ../vlog/tb/test.sv(48)       0  1227
+# /tb/u_wb_sva/req_ack_write
+#                      ../vlog/tb/test.sv(51)      12    12
+# 
+# 
+# 

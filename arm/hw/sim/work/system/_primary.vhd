@@ -1,0 +1,41 @@
+library verilog;
+use verilog.vl_types.all;
+entity system is
+    port(
+        quick_n_reset   : in     vl_logic;
+        brd_rst         : in     vl_logic;
+        brd_clk_n       : in     vl_logic;
+        brd_clk_p       : in     vl_logic;
+        i_uart0_rts     : in     vl_logic;
+        o_uart0_rx      : out    vl_logic;
+        o_uart0_cts     : out    vl_logic;
+        i_uart0_tx      : in     vl_logic;
+        ddr3_dq         : inout  vl_logic_vector(15 downto 0);
+        ddr3_addr       : out    vl_logic_vector(12 downto 0);
+        ddr3_ba         : out    vl_logic_vector(2 downto 0);
+        ddr3_ras_n      : out    vl_logic;
+        ddr3_cas_n      : out    vl_logic;
+        ddr3_we_n       : out    vl_logic;
+        ddr3_odt        : out    vl_logic;
+        ddr3_reset_n    : out    vl_logic;
+        ddr3_cke        : out    vl_logic;
+        ddr3_dm         : out    vl_logic_vector(1 downto 0);
+        ddr3_dqs_p      : inout  vl_logic_vector(1 downto 0);
+        ddr3_dqs_n      : inout  vl_logic_vector(1 downto 0);
+        ddr3_ck_p       : out    vl_logic;
+        ddr3_ck_n       : out    vl_logic;
+        mtx_clk_pad_i   : in     vl_logic;
+        mtxd_pad_o      : out    vl_logic_vector(3 downto 0);
+        mtxen_pad_o     : out    vl_logic;
+        mtxerr_pad_o    : out    vl_logic;
+        mrx_clk_pad_i   : in     vl_logic;
+        mrxd_pad_i      : in     vl_logic_vector(3 downto 0);
+        mrxdv_pad_i     : in     vl_logic;
+        mrxerr_pad_i    : in     vl_logic;
+        mcoll_pad_i     : in     vl_logic;
+        mcrs_pad_i      : in     vl_logic;
+        md_pad_io       : inout  vl_logic;
+        mdc_pad_o       : out    vl_logic;
+        phy_reset_n     : out    vl_logic
+    );
+end system;

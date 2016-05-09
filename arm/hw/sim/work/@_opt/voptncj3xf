@@ -1,0 +1,63 @@
+library verilog;
+use verilog.vl_types.all;
+entity eth_macstatus is
+    generic(
+        Tp              : integer := 1
+    );
+    port(
+        MRxClk          : in     vl_logic;
+        Reset           : in     vl_logic;
+        ReceivedLengthOK: out    vl_logic;
+        ReceiveEnd      : out    vl_logic;
+        ReceivedPacketGood: out    vl_logic;
+        RxCrcError      : in     vl_logic;
+        MRxErr          : in     vl_logic;
+        MRxDV           : in     vl_logic;
+        RxStateSFD      : in     vl_logic;
+        RxStateData     : in     vl_logic_vector(1 downto 0);
+        RxStatePreamble : in     vl_logic;
+        RxStateIdle     : in     vl_logic;
+        Transmitting    : in     vl_logic;
+        RxByteCnt       : in     vl_logic_vector(15 downto 0);
+        RxByteCntEq0    : in     vl_logic;
+        RxByteCntGreat2 : in     vl_logic;
+        RxByteCntMaxFrame: in     vl_logic;
+        InvalidSymbol   : out    vl_logic;
+        MRxD            : in     vl_logic_vector(3 downto 0);
+        LatchedCrcError : out    vl_logic;
+        Collision       : in     vl_logic;
+        CollValid       : in     vl_logic_vector(5 downto 0);
+        RxLateCollision : out    vl_logic;
+        r_RecSmall      : in     vl_logic;
+        r_MinFL         : in     vl_logic_vector(15 downto 0);
+        r_MaxFL         : in     vl_logic_vector(15 downto 0);
+        ShortFrame      : out    vl_logic;
+        DribbleNibble   : out    vl_logic;
+        ReceivedPacketTooBig: out    vl_logic;
+        r_HugEn         : in     vl_logic;
+        LoadRxStatus    : out    vl_logic;
+        StartTxDone     : in     vl_logic;
+        StartTxAbort    : in     vl_logic;
+        RetryCnt        : in     vl_logic_vector(3 downto 0);
+        RetryCntLatched : out    vl_logic_vector(3 downto 0);
+        MTxClk          : in     vl_logic;
+        MaxCollisionOccured: in     vl_logic;
+        RetryLimit      : out    vl_logic;
+        LateCollision   : in     vl_logic;
+        LateCollLatched : out    vl_logic;
+        DeferIndication : in     vl_logic;
+        DeferLatched    : out    vl_logic;
+        RstDeferLatched : in     vl_logic;
+        TxStartFrm      : in     vl_logic;
+        StatePreamble   : in     vl_logic;
+        StateData       : in     vl_logic_vector(1 downto 0);
+        CarrierSense    : in     vl_logic;
+        CarrierSenseLost: out    vl_logic;
+        TxUsedData      : in     vl_logic;
+        LatchedMRxErr   : out    vl_logic;
+        Loopback        : in     vl_logic;
+        r_FullD         : in     vl_logic
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of Tp : constant is 1;
+end eth_macstatus;

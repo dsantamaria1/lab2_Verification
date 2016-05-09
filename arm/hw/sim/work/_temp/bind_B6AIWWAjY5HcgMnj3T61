@@ -1,0 +1,1 @@
+zzbind_inst_conv_to_direct_instzz module4SVA wrp (.i_clk(i_clk), .wishbone_st(wishbone_st), .i_wb_ack(i_wb_ack), .extra_write_r(extra_write_r));

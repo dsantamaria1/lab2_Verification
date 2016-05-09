@@ -1,0 +1,1020 @@
+000000009         0:   ldr     r0, [pc, #248]
+000000012         4:   ldr     r1, [pc, #260]
+000000015              read    addr 100, data 20000400 to r0
+000000021              read    addr 110, data 00a02800 to r1
+000000024         8:   str     r1, [r0]
+000000027         c:   ldr     r1, [pc, #260]
+000000036              write   addr 20000400, data 00a02800, be f
+000000040              read    addr 118, data 28001000 to r1
+000000043        10:   add     r1,  r1,  #2
+000000046        14:   str     r1, [r0, #4]
+000000049        18:   ldr     r1, [pc, #244]
+000000056              write   addr 20000404, data 28001002, be f
+000000060              read    addr 114, data 0000a800 to r1
+000000063        1c:   str     r1, [r0, #512]
+000000066        20:   ldr     r1, [pc, #244]
+000000076              write   addr 20000600, data 0000a800, be f
+000000080              read    addr 11c, data 28001200 to r1
+000000083        24:   str     r1, [r0, #516]
+000000086        28:   ldr     r0, [pc, #232]
+000000096              write   addr 20000604, data 28001200, be f
+000000097        2c:   ldr     r1, [pc, #432]
+000000100              read    addr 118, data 28001000 to r0
+000000103        30:   ldr     r2, [pc, #432]
+000000106              read    addr 1e4, data 00000124 to r1
+000000109        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000112              read    addr 1e8, data 000001c8 to r2
+000000118              read    addr 124, data 0e000000 to r3
+000000126              read    addr 128, data a0583e0c to r4
+000000129              read    addr 12c, data 554e5300 to r5
+000000132              read    addr 130, data 0008304c to r6
+000000135              read    addr 134, data 90000045 to r7
+000000138              read    addr 138, data 00400000 to r8
+000000139              read    addr 13c, data d5b61140 to r9
+000000142        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000145              read    addr 140, data 0501a8c0 to r10
+000000151              write   addr 28001000, data 0e000000, be f
+000000152              write   addr 28001004, data a0583e0c, be f
+000000153              write   addr 28001008, data 554e5300, be f
+000000154              write   addr 2800100c, data 0008304c, be f
+000000155              write   addr 28001010, data 90000045, be f
+000000156              write   addr 28001014, data 00400000, be f
+000000160              write   addr 28001018, data d5b61140, be f
+000000161        3c:   cmp     r1,  r2
+000000164              write   addr 2800101c, data 0501a8c0, be f
+000000165        40:   blt     34
+000000167              jump    from 40 to 34, r0 28001020, r1 00000144
+000000174        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000180              read    addr 144, data 3201a8c0 to r3
+000000188              read    addr 148, data 01080203 to r4
+000000191              read    addr 14c, data b6c47c00 to r5
+000000194              read    addr 150, data f67d4fc7 to r6
+000000197              read    addr 154, data 00000000 to r7
+000000200              read    addr 158, data 02000000 to r8
+000000201              read    addr 15c, data a3860100 to r9
+000000204        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000207              read    addr 160, data 03000000 to r10
+000000213              write   addr 28001020, data 3201a8c0, be f
+000000214              write   addr 28001024, data 01080203, be f
+000000215              write   addr 28001028, data b6c47c00, be f
+000000216              write   addr 2800102c, data f67d4fc7, be f
+000000217              write   addr 28001030, data 00000000, be f
+000000218              write   addr 28001034, data 02000000, be f
+000000222              write   addr 28001038, data a3860100, be f
+000000223        3c:   cmp     r1,  r2
+000000226              write   addr 2800103c, data 03000000, be f
+000000227        40:   blt     34
+000000229              jump    from 40 to 34, r0 28001040, r1 00000164
+000000236        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000242              read    addr 164, data 06000000 to r3
+000000250              read    addr 168, data 01000000 to r4
+000000253              read    addr 16c, data 18000000 to r5
+000000256              read    addr 170, data 025b8f02 to r6
+000000259              read    addr 174, data 02000000 to r7
+000000262              read    addr 178, data 00003170 to r8
+000000263              read    addr 17c, data 00000000 to r9
+000000266        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000269              read    addr 180, data 00000000 to r10
+000000275              write   addr 28001040, data 06000000, be f
+000000276              write   addr 28001044, data 01000000, be f
+000000277              write   addr 28001048, data 18000000, be f
+000000278              write   addr 2800104c, data 025b8f02, be f
+000000279              write   addr 28001050, data 02000000, be f
+000000280              write   addr 28001054, data 00003170, be f
+000000284              write   addr 28001058, data 00000000, be f
+000000285        3c:   cmp     r1,  r2
+000000288              write   addr 2800105c, data 00000000, be f
+000000289        40:   blt     34
+000000291              jump    from 40 to 34, r0 28001060, r1 00000184
+000000298        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000304              read    addr 184, data 00000000 to r3
+000000312              read    addr 188, data 00000000 to r4
+000000315              read    addr 18c, data 00000000 to r5
+000000318              read    addr 190, data 24000000 to r6
+000000321              read    addr 194, data 01070001 to r7
+000000324              read    addr 198, data 00143ed5 to r8
+000000325              read    addr 19c, data 00000000 to r9
+000000328        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000331              read    addr 1a0, data 2c043c7f to r10
+000000337              write   addr 28001060, data 00000000, be f
+000000338              write   addr 28001064, data 00000000, be f
+000000339              write   addr 28001068, data 00000000, be f
+000000340              write   addr 2800106c, data 24000000, be f
+000000341              write   addr 28001070, data 01070001, be f
+000000342              write   addr 28001074, data 00143ed5, be f
+000000346              write   addr 28001078, data 00000000, be f
+000000347        3c:   cmp     r1,  r2
+000000350              write   addr 2800107c, data 2c043c7f, be f
+000000351        40:   blt     34
+000000353              jump    from 40 to 34, r0 28001080, r1 000001a4
+000000360        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000366              read    addr 1a4, data 6c41657c to r3
+000000374              read    addr 1a8, data 8cc37e87 to r4
+000000377              read    addr 1ac, data 2340a928 to r5
+000000380              read    addr 1b0, data 0026048e to r6
+000000383              read    addr 1b4, data ec587a0e to r7
+000000386              read    addr 1b8, data 00000000 to r8
+000000387              read    addr 1bc, data 00080000 to r9
+000000390        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000393              read    addr 1c0, data 00080000 to r10
+000000399              write   addr 28001080, data 6c41657c, be f
+000000400              write   addr 28001084, data 8cc37e87, be f
+000000401              write   addr 28001088, data 2340a928, be f
+000000402              write   addr 2800108c, data 0026048e, be f
+000000403              write   addr 28001090, data ec587a0e, be f
+000000404              write   addr 28001094, data 00000000, be f
+000000408              write   addr 28001098, data 00080000, be f
+000000409        3c:   cmp     r1,  r2
+000000412              write   addr 2800109c, data 00080000, be f
+000000413        40:   blt     34
+000000415              jump    from 40 to 34, r0 280010a0, r1 000001c4
+000000422        34:   ldmia   r1!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000428              read    addr 1c4, data 00000000 to r3
+000000436              read    addr 1c8, data 00000000 to r4
+000000439              read    addr 1cc, data 00000000 to r5
+000000442              read    addr 1d0, data 00000000 to r6
+000000445              read    addr 1d4, data 00000000 to r7
+000000448              read    addr 1d8, data 00000000 to r8
+000000449              read    addr 1dc, data 00000000 to r9
+000000452        38:   stmia   r0!, {r3, r4, r5, r6, r7, r8, r9, r10}
+000000455              read    addr 1e0, data 00000000 to r10
+000000461              write   addr 280010a0, data 00000000, be f
+000000462              write   addr 280010a4, data 00000000, be f
+000000463              write   addr 280010a8, data 00000000, be f
+000000464              write   addr 280010ac, data 00000000, be f
+000000465              write   addr 280010b0, data 00000000, be f
+000000466              write   addr 280010b4, data 00000000, be f
+000000470              write   addr 280010b8, data 00000000, be f
+000000471        3c:   cmp     r1,  r2
+000000474              write   addr 280010bc, data 00000000, be f
+000000475        40:  -blt     34
+000000478        44:   ldr     r0, [pc, #152]
+000000481        48:   ldr     r1, [pc, #208]
+000000484              read    addr e4, data 20000000 to r0
+000000490              read    addr 120, data 0000a0a3 to r1
+000000493        4c:   str     r1, [r0]
+000000496        50:   ldr     r0, [pc, #168]
+000000501              write   addr 20000000, data 0000a0a3, be f
+000000502        54:   ldr     r1, [pc, #180]
+000000505              read    addr 100, data 20000400 to r0
+000000511              read    addr 110, data 00a02800 to r1
+000000514        58:   orr     r1,  r1,  #0x00008000
+000000517        5c:   str     r1, [r0]
+000000520        60:   ldr     r1, [r0, #512]
+000000528              write   addr 20000400, data 00a0a800, be f
+000000537              read    addr 20000600, data 0000a800 to r1
+000000547        64:   ands    r1,  r1,  #0x00008000
+000000557        68:   bne     60
+000000566              jump    from 68 to 60, r0 20000400, r1 00008000
+000000580        60:   ldr     r1, [r0, #512]
+000000589              read    addr 20000600, data 0000a800 to r1
+000000592        64:   ands    r1,  r1,  #0x00008000
+000000595        68:   bne     60
+000000597              jump    from 68 to 60, r0 20000400, r1 00008000
+000000604        60:   ldr     r1, [r0, #512]
+000000613              read    addr 20000600, data 0000a800 to r1
+000000617        64:   ands    r1,  r1,  #0x00008000
+000000620        68:   bne     60
+000000622              jump    from 68 to 60, r0 20000400, r1 00008000
+000000630        60:   ldr     r1, [r0, #512]
+000000641              read    addr 20000600, data 0000a800 to r1
+000000645        64:   ands    r1,  r1,  #0x00008000
+000000648        68:   bne     60
+000000650              jump    from 68 to 60, r0 20000400, r1 00008000
+000000659        60:   ldr     r1, [r0, #512]
+000000669              read    addr 20000600, data 0000a800 to r1
+000000673        64:   ands    r1,  r1,  #0x00008000
+000000676        68:   bne     60
+000000680              jump    from 68 to 60, r0 20000400, r1 00008000
+000000687        60:   ldr     r1, [r0, #512]
+000000697              read    addr 20000600, data 0000a800 to r1
+000000700        64:   ands    r1,  r1,  #0x00008000
+000000703        68:   bne     60
+000000706              jump    from 68 to 60, r0 20000400, r1 00008000
+000000713        60:   ldr     r1, [r0, #512]
+000000725              read    addr 20000600, data 0000a800 to r1
+000000728        64:   ands    r1,  r1,  #0x00008000
+000000732        68:   bne     60
+000000734              jump    from 68 to 60, r0 20000400, r1 00008000
+000000741        60:   ldr     r1, [r0, #512]
+000000753              read    addr 20000600, data 0000a800 to r1
+000000758        64:   ands    r1,  r1,  #0x00008000
+000000761        68:   bne     60
+000000763              jump    from 68 to 60, r0 20000400, r1 00008000
+000000771        60:   ldr     r1, [r0, #512]
+000000781              read    addr 20000600, data 0000a800 to r1
+000000785        64:   ands    r1,  r1,  #0x00008000
+000000788        68:   bne     60
+000000790              jump    from 68 to 60, r0 20000400, r1 00008000
+000000799        60:   ldr     r1, [r0, #512]
+000000809              read    addr 20000600, data 0000a800 to r1
+000000813        64:   ands    r1,  r1,  #0x00008000
+000000816        68:   bne     60
+000000818              jump    from 68 to 60, r0 20000400, r1 00008000
+000000826        60:   ldr     r1, [r0, #512]
+000000837              read    addr 20000600, data 0000a800 to r1
+000000841        64:   ands    r1,  r1,  #0x00008000
+000000844        68:   bne     60
+000000847              jump    from 68 to 60, r0 20000400, r1 00008000
+000000854        60:   ldr     r1, [r0, #512]
+000000865              read    addr 20000600, data 0000a800 to r1
+000000868        64:   ands    r1,  r1,  #0x00008000
+000000873        68:   bne     60
+000000875              jump    from 68 to 60, r0 20000400, r1 00008000
+000000882        60:   ldr     r1, [r0, #512]
+000000893              read    addr 20000600, data 0000a800 to r1
+000000896        64:   ands    r1,  r1,  #0x00008000
+000000900        68:   bne     60
+000000902              jump    from 68 to 60, r0 20000400, r1 00008000
+000000909        60:   ldr     r1, [r0, #512]
+000000921              read    addr 20000600, data 0000a800 to r1
+000000924        64:   ands    r1,  r1,  #0x00008000
+000000927        68:   bne     60
+000000929              jump    from 68 to 60, r0 20000400, r1 00008000
+000000936        60:   ldr     r1, [r0, #512]
+000000945              read    addr 20000600, data 0000a800 to r1
+000000948        64:   ands    r1,  r1,  #0x00008000
+000000952        68:   bne     60
+000000954              jump    from 68 to 60, r0 20000400, r1 00008000
+000000961        60:   ldr     r1, [r0, #512]
+000000973              read    addr 20000600, data 0000a800 to r1
+000000976        64:   ands    r1,  r1,  #0x00008000
+000000979        68:   bne     60
+000000981              jump    from 68 to 60, r0 20000400, r1 00008000
+000000988        60:   ldr     r1, [r0, #512]
+000000997              read    addr 20000600, data 0000a800 to r1
+000001000        64:   ands    r1,  r1,  #0x00008000
+000001003        68:   bne     60
+000001005              jump    from 68 to 60, r0 20000400, r1 00008000
+000001012        60:   ldr     r1, [r0, #512]
+000001021              read    addr 20000600, data 0000a800 to r1
+000001024        64:   ands    r1,  r1,  #0x00008000
+000001027        68:   bne     60
+000001029              jump    from 68 to 60, r0 20000400, r1 00008000
+000001036        60:   ldr     r1, [r0, #512]
+000001045              read    addr 20000600, data 0000a800 to r1
+000001048        64:   ands    r1,  r1,  #0x00008000
+000001051        68:   bne     60
+000001054              jump    from 68 to 60, r0 20000400, r1 00008000
+000001061        60:   ldr     r1, [r0, #512]
+000001069              read    addr 20000600, data 0000a800 to r1
+000001072        64:   ands    r1,  r1,  #0x00008000
+000001075        68:   bne     60
+000001077              jump    from 68 to 60, r0 20000400, r1 00008000
+000001084        60:   ldr     r1, [r0, #512]
+000001093              read    addr 20000600, data 0000a800 to r1
+000001096        64:   ands    r1,  r1,  #0x00008000
+000001099        68:   bne     60
+000001101              jump    from 68 to 60, r0 20000400, r1 00008000
+000001109        60:   ldr     r1, [r0, #512]
+000001117              read    addr 20000600, data 0000a800 to r1
+000001120        64:   ands    r1,  r1,  #0x00008000
+000001123        68:   bne     60
+000001125              jump    from 68 to 60, r0 20000400, r1 00008000
+000001132        60:   ldr     r1, [r0, #512]
+000001141              read    addr 20000600, data 0000a800 to r1
+000001144        64:   ands    r1,  r1,  #0x00008000
+000001147        68:   bne     60
+000001149              jump    from 68 to 60, r0 20000400, r1 00008000
+000001156        60:   ldr     r1, [r0, #512]
+000001167              read    addr 20000600, data 00a42080 to r1
+000001170        64:   ands    r1,  r1,  #0x00008000
+000001173        68:  -bne     60
+000001176        6c:   mov     r0,  #20
+000001179        70:   subs    r0,  r0,  #1
+000001182        74:   bne     70
+000001184              jump    from 74 to 70, r0 00000013, r1 00000000
+000001191        70:   subs    r0,  r0,  #1
+000001194        74:   bne     70
+000001196              jump    from 74 to 70, r0 00000012, r1 00000000
+000001203        70:   subs    r0,  r0,  #1
+000001206        74:   bne     70
+000001208              jump    from 74 to 70, r0 00000011, r1 00000000
+000001215        70:   subs    r0,  r0,  #1
+000001218        74:   bne     70
+000001220              jump    from 74 to 70, r0 00000010, r1 00000000
+000001227        70:   subs    r0,  r0,  #1
+000001230        74:   bne     70
+000001232              jump    from 74 to 70, r0 0000000f, r1 00000000
+000001239        70:   subs    r0,  r0,  #1
+000001242        74:   bne     70
+000001244              jump    from 74 to 70, r0 0000000e, r1 00000000
+000001251        70:   subs    r0,  r0,  #1
+000001254        74:   bne     70
+000001256              jump    from 74 to 70, r0 0000000d, r1 00000000
+000001263        70:   subs    r0,  r0,  #1
+000001266        74:   bne     70
+000001268              jump    from 74 to 70, r0 0000000c, r1 00000000
+000001275        70:   subs    r0,  r0,  #1
+000001278        74:   bne     70
+000001280              jump    from 74 to 70, r0 0000000b, r1 00000000
+000001287        70:   subs    r0,  r0,  #1
+000001290        74:   bne     70
+000001292              jump    from 74 to 70, r0 0000000a, r1 00000000
+000001299        70:   subs    r0,  r0,  #1
+000001302        74:   bne     70
+000001304              jump    from 74 to 70, r0 00000009, r1 00000000
+000001311        70:   subs    r0,  r0,  #1
+000001314        74:   bne     70
+000001316              jump    from 74 to 70, r0 00000008, r1 00000000
+000001323        70:   subs    r0,  r0,  #1
+000001326        74:   bne     70
+000001328              jump    from 74 to 70, r0 00000007, r1 00000000
+000001335        70:   subs    r0,  r0,  #1
+000001338        74:   bne     70
+000001340              jump    from 74 to 70, r0 00000006, r1 00000000
+000001347        70:   subs    r0,  r0,  #1
+000001350        74:   bne     70
+000001352              jump    from 74 to 70, r0 00000005, r1 00000000
+000001359        70:   subs    r0,  r0,  #1
+000001362        74:   bne     70
+000001364              jump    from 74 to 70, r0 00000004, r1 00000000
+000001371        70:   subs    r0,  r0,  #1
+000001374        74:   bne     70
+000001376              jump    from 74 to 70, r0 00000003, r1 00000000
+000001383        70:   subs    r0,  r0,  #1
+000001386        74:   bne     70
+000001388              jump    from 74 to 70, r0 00000002, r1 00000000
+000001395        70:   subs    r0,  r0,  #1
+000001398        74:   bne     70
+000001400              jump    from 74 to 70, r0 00000001, r1 00000000
+000001407        70:   subs    r0,  r0,  #1
+000001410        74:  -bne     70
+000001413        78:   ldr     r0, [pc, #156]
+000001419              read    addr 11c, data 28001200 to r0
+000001422        7c:   add     r3,  r0,  #2
+000001425        80:   ldr     r1, [pc, #348]
+000001431              read    addr 1e4, data 00000124 to r1
+000001434        84:   add     r1,  r1,  #4
+000001437        88:   ldr     r2, [pc, #344]
+000001443              read    addr 1e8, data 000001c8 to r2
+000001446        8c:   sub     r2,  r2,  #4
+000001449        90:   ldr     r4, [r0, #4]!
+000001455              read    addr 28001204, data 5300a058 to r4
+000001458        94:   mov     r6,  r4, lsl #16
+000001461        98:   ldr     r5, [r3], #4
+000001464        9c:   ldr     ip, [pc, #104]
+000001467              read    addr 28001200, data 3e0c0e00 to r5
+000001473              read    addr 10c, data 0000ffff to ip
+000001476        a0:   and     r5,  r5,  ip
+000001479        a4:   orr     r7,  r5,  r6
+000001482        a8:   ldr     r8, [r1], #4
+000001488              read    addr 128, data a0583e0c to r8
+000001491        ac:   cmp     r7,  r8
+000001494        b0:  -movne   r10, #100
+000001497        b4:  -bne     c4
+000001500        b8:   cmp     r1,  r2
+000001503        bc:   blt     90
+000001505              jump    from bc to 90, r0 28001204, r1 0000012c
+000001512        90:   ldr     r4, [r0, #4]!
+000001518              read    addr 28001208, data 304c554e to r4
+000001521        94:   mov     r6,  r4, lsl #16
+000001524        98:   ldr     r5, [r3], #4
+000001527        9c:   ldr     ip, [pc, #104]
+000001530              read    addr 28001204, data 5300a058 to r5
+000001536              read    addr 10c, data 0000ffff to ip
+000001539        a0:   and     r5,  r5,  ip
+000001542        a4:   orr     r7,  r5,  r6
+000001545        a8:   ldr     r8, [r1], #4
+000001551              read    addr 12c, data 554e5300 to r8
+000001554        ac:   cmp     r7,  r8
+000001557        b0:  -movne   r10, #100
+000001560        b4:  -bne     c4
+000001563        b8:   cmp     r1,  r2
+000001566        bc:   blt     90
+000001568              jump    from bc to 90, r0 28001208, r1 00000130
+000001575        90:   ldr     r4, [r0, #4]!
+000001581              read    addr 2800120c, data 00450008 to r4
+000001584        94:   mov     r6,  r4, lsl #16
+000001587        98:   ldr     r5, [r3], #4
+000001590        9c:   ldr     ip, [pc, #104]
+000001593              read    addr 28001208, data 304c554e to r5
+000001599              read    addr 10c, data 0000ffff to ip
+000001602        a0:   and     r5,  r5,  ip
+000001605        a4:   orr     r7,  r5,  r6
+000001608        a8:   ldr     r8, [r1], #4
+000001614              read    addr 130, data 0008304c to r8
+000001617        ac:   cmp     r7,  r8
+000001620        b0:  -movne   r10, #100
+000001623        b4:  -bne     c4
+000001626        b8:   cmp     r1,  r2
+000001629        bc:   blt     90
+000001631              jump    from bc to 90, r0 2800120c, r1 00000134
+000001638        90:   ldr     r4, [r0, #4]!
+000001644              read    addr 28001210, data 00009000 to r4
+000001647        94:   mov     r6,  r4, lsl #16
+000001650        98:   ldr     r5, [r3], #4
+000001653        9c:   ldr     ip, [pc, #104]
+000001656              read    addr 2800120c, data 00450008 to r5
+000001662              read    addr 10c, data 0000ffff to ip
+000001665        a0:   and     r5,  r5,  ip
+000001668        a4:   orr     r7,  r5,  r6
+000001671        a8:   ldr     r8, [r1], #4
+000001677              read    addr 134, data 90000045 to r8
+000001680        ac:   cmp     r7,  r8
+000001683        b0:  -movne   r10, #100
+000001686        b4:  -bne     c4
+000001689        b8:   cmp     r1,  r2
+000001692        bc:   blt     90
+000001694              jump    from bc to 90, r0 28001210, r1 00000138
+000001701        90:   ldr     r4, [r0, #4]!
+000001707              read    addr 28001214, data 11400040 to r4
+000001710        94:   mov     r6,  r4, lsl #16
+000001713        98:   ldr     r5, [r3], #4
+000001716        9c:   ldr     ip, [pc, #104]
+000001719              read    addr 28001210, data 00009000 to r5
+000001725              read    addr 10c, data 0000ffff to ip
+000001728        a0:   and     r5,  r5,  ip
+000001731        a4:   orr     r7,  r5,  r6
+000001734        a8:   ldr     r8, [r1], #4
+000001740              read    addr 138, data 00400000 to r8
+000001743        ac:   cmp     r7,  r8
+000001746        b0:  -movne   r10, #100
+000001749        b4:  -bne     c4
+000001752        b8:   cmp     r1,  r2
+000001755        bc:   blt     90
+000001757              jump    from bc to 90, r0 28001214, r1 0000013c
+000001764        90:   ldr     r4, [r0, #4]!
+000001770              read    addr 28001218, data a8c0d5b6 to r4
+000001773        94:   mov     r6,  r4, lsl #16
+000001776        98:   ldr     r5, [r3], #4
+000001779        9c:   ldr     ip, [pc, #104]
+000001782              read    addr 28001214, data 11400040 to r5
+000001788              read    addr 10c, data 0000ffff to ip
+000001791        a0:   and     r5,  r5,  ip
+000001794        a4:   orr     r7,  r5,  r6
+000001797        a8:   ldr     r8, [r1], #4
+000001803              read    addr 13c, data d5b61140 to r8
+000001806        ac:   cmp     r7,  r8
+000001809        b0:  -movne   r10, #100
+000001812        b4:  -bne     c4
+000001815        b8:   cmp     r1,  r2
+000001818        bc:   blt     90
+000001820              jump    from bc to 90, r0 28001218, r1 00000140
+000001827        90:   ldr     r4, [r0, #4]!
+000001833              read    addr 2800121c, data a8c00501 to r4
+000001836        94:   mov     r6,  r4, lsl #16
+000001839        98:   ldr     r5, [r3], #4
+000001842        9c:   ldr     ip, [pc, #104]
+000001845              read    addr 28001218, data a8c0d5b6 to r5
+000001851              read    addr 10c, data 0000ffff to ip
+000001854        a0:   and     r5,  r5,  ip
+000001857        a4:   orr     r7,  r5,  r6
+000001860        a8:   ldr     r8, [r1], #4
+000001866              read    addr 140, data 0501a8c0 to r8
+000001869        ac:   cmp     r7,  r8
+000001872        b0:  -movne   r10, #100
+000001875        b4:  -bne     c4
+000001878        b8:   cmp     r1,  r2
+000001881        bc:   blt     90
+000001883              jump    from bc to 90, r0 2800121c, r1 00000144
+000001890        90:   ldr     r4, [r0, #4]!
+000001896              read    addr 28001220, data 02033201 to r4
+000001899        94:   mov     r6,  r4, lsl #16
+000001902        98:   ldr     r5, [r3], #4
+000001905        9c:   ldr     ip, [pc, #104]
+000001908              read    addr 2800121c, data a8c00501 to r5
+000001914              read    addr 10c, data 0000ffff to ip
+000001917        a0:   and     r5,  r5,  ip
+000001920        a4:   orr     r7,  r5,  r6
+000001923        a8:   ldr     r8, [r1], #4
+000001929              read    addr 144, data 3201a8c0 to r8
+000001932        ac:   cmp     r7,  r8
+000001935        b0:  -movne   r10, #100
+000001938        b4:  -bne     c4
+000001941        b8:   cmp     r1,  r2
+000001944        bc:   blt     90
+000001946              jump    from bc to 90, r0 28001220, r1 00000148
+000001953        90:   ldr     r4, [r0, #4]!
+000001959              read    addr 28001224, data 7c000108 to r4
+000001962        94:   mov     r6,  r4, lsl #16
+000001965        98:   ldr     r5, [r3], #4
+000001968        9c:   ldr     ip, [pc, #104]
+000001971              read    addr 28001220, data 02033201 to r5
+000001977              read    addr 10c, data 0000ffff to ip
+000001980        a0:   and     r5,  r5,  ip
+000001983        a4:   orr     r7,  r5,  r6
+000001986        a8:   ldr     r8, [r1], #4
+000001992              read    addr 148, data 01080203 to r8
+000001995        ac:   cmp     r7,  r8
+000001998        b0:  -movne   r10, #100
+000002001        b4:  -bne     c4
+000002004        b8:   cmp     r1,  r2
+000002007        bc:   blt     90
+000002009              jump    from bc to 90, r0 28001224, r1 0000014c
+000002016        90:   ldr     r4, [r0, #4]!
+000002022              read    addr 28001228, data 4fc7b6c4 to r4
+000002025        94:   mov     r6,  r4, lsl #16
+000002028        98:   ldr     r5, [r3], #4
+000002031        9c:   ldr     ip, [pc, #104]
+000002034              read    addr 28001224, data 7c000108 to r5
+000002040              read    addr 10c, data 0000ffff to ip
+000002043        a0:   and     r5,  r5,  ip
+000002046        a4:   orr     r7,  r5,  r6
+000002049        a8:   ldr     r8, [r1], #4
+000002055              read    addr 14c, data b6c47c00 to r8
+000002058        ac:   cmp     r7,  r8
+000002061        b0:  -movne   r10, #100
+000002064        b4:  -bne     c4
+000002067        b8:   cmp     r1,  r2
+000002070        bc:   blt     90
+000002072              jump    from bc to 90, r0 28001228, r1 00000150
+000002079        90:   ldr     r4, [r0, #4]!
+000002085              read    addr 2800122c, data 0000f67d to r4
+000002088        94:   mov     r6,  r4, lsl #16
+000002091        98:   ldr     r5, [r3], #4
+000002094        9c:   ldr     ip, [pc, #104]
+000002097              read    addr 28001228, data 4fc7b6c4 to r5
+000002103              read    addr 10c, data 0000ffff to ip
+000002106        a0:   and     r5,  r5,  ip
+000002109        a4:   orr     r7,  r5,  r6
+000002112        a8:   ldr     r8, [r1], #4
+000002118              read    addr 150, data f67d4fc7 to r8
+000002121        ac:   cmp     r7,  r8
+000002124        b0:  -movne   r10, #100
+000002127        b4:  -bne     c4
+000002130        b8:   cmp     r1,  r2
+000002133        bc:   blt     90
+000002135              jump    from bc to 90, r0 2800122c, r1 00000154
+000002142        90:   ldr     r4, [r0, #4]!
+000002148              read    addr 28001230, data 00000000 to r4
+000002151        94:   mov     r6,  r4, lsl #16
+000002154        98:   ldr     r5, [r3], #4
+000002157        9c:   ldr     ip, [pc, #104]
+000002160              read    addr 2800122c, data 0000f67d to r5
+000002166              read    addr 10c, data 0000ffff to ip
+000002169        a0:   and     r5,  r5,  ip
+000002172        a4:   orr     r7,  r5,  r6
+000002175        a8:   ldr     r8, [r1], #4
+000002181              read    addr 154, data 00000000 to r8
+000002184        ac:   cmp     r7,  r8
+000002187        b0:  -movne   r10, #100
+000002190        b4:  -bne     c4
+000002193        b8:   cmp     r1,  r2
+000002196        bc:   blt     90
+000002198              jump    from bc to 90, r0 28001230, r1 00000158
+000002205        90:   ldr     r4, [r0, #4]!
+000002211              read    addr 28001234, data 01000200 to r4
+000002214        94:   mov     r6,  r4, lsl #16
+000002217        98:   ldr     r5, [r3], #4
+000002220        9c:   ldr     ip, [pc, #104]
+000002223              read    addr 28001230, data 00000000 to r5
+000002229              read    addr 10c, data 0000ffff to ip
+000002232        a0:   and     r5,  r5,  ip
+000002235        a4:   orr     r7,  r5,  r6
+000002238        a8:   ldr     r8, [r1], #4
+000002244              read    addr 158, data 02000000 to r8
+000002247        ac:   cmp     r7,  r8
+000002250        b0:  -movne   r10, #100
+000002253        b4:  -bne     c4
+000002256        b8:   cmp     r1,  r2
+000002259        bc:   blt     90
+000002261              jump    from bc to 90, r0 28001234, r1 0000015c
+000002268        90:   ldr     r4, [r0, #4]!
+000002274              read    addr 28001238, data 0000a386 to r4
+000002277        94:   mov     r6,  r4, lsl #16
+000002280        98:   ldr     r5, [r3], #4
+000002283        9c:   ldr     ip, [pc, #104]
+000002286              read    addr 28001234, data 01000200 to r5
+000002292              read    addr 10c, data 0000ffff to ip
+000002295        a0:   and     r5,  r5,  ip
+000002298        a4:   orr     r7,  r5,  r6
+000002301        a8:   ldr     r8, [r1], #4
+000002307              read    addr 15c, data a3860100 to r8
+000002310        ac:   cmp     r7,  r8
+000002313        b0:  -movne   r10, #100
+000002316        b4:  -bne     c4
+000002319        b8:   cmp     r1,  r2
+000002322        bc:   blt     90
+000002324              jump    from bc to 90, r0 28001238, r1 00000160
+000002331        90:   ldr     r4, [r0, #4]!
+000002337              read    addr 2800123c, data 00000300 to r4
+000002340        94:   mov     r6,  r4, lsl #16
+000002343        98:   ldr     r5, [r3], #4
+000002346        9c:   ldr     ip, [pc, #104]
+000002349              read    addr 28001238, data 0000a386 to r5
+000002355              read    addr 10c, data 0000ffff to ip
+000002358        a0:   and     r5,  r5,  ip
+000002361        a4:   orr     r7,  r5,  r6
+000002364        a8:   ldr     r8, [r1], #4
+000002370              read    addr 160, data 03000000 to r8
+000002373        ac:   cmp     r7,  r8
+000002376        b0:  -movne   r10, #100
+000002379        b4:  -bne     c4
+000002382        b8:   cmp     r1,  r2
+000002385        bc:   blt     90
+000002387              jump    from bc to 90, r0 2800123c, r1 00000164
+000002394        90:   ldr     r4, [r0, #4]!
+000002400              read    addr 28001240, data 00000600 to r4
+000002403        94:   mov     r6,  r4, lsl #16
+000002406        98:   ldr     r5, [r3], #4
+000002409        9c:   ldr     ip, [pc, #104]
+000002412              read    addr 2800123c, data 00000300 to r5
+000002418              read    addr 10c, data 0000ffff to ip
+000002421        a0:   and     r5,  r5,  ip
+000002424        a4:   orr     r7,  r5,  r6
+000002427        a8:   ldr     r8, [r1], #4
+000002433              read    addr 164, data 06000000 to r8
+000002436        ac:   cmp     r7,  r8
+000002439        b0:  -movne   r10, #100
+000002442        b4:  -bne     c4
+000002445        b8:   cmp     r1,  r2
+000002448        bc:   blt     90
+000002450              jump    from bc to 90, r0 28001240, r1 00000168
+000002457        90:   ldr     r4, [r0, #4]!
+000002463              read    addr 28001244, data 00000100 to r4
+000002466        94:   mov     r6,  r4, lsl #16
+000002469        98:   ldr     r5, [r3], #4
+000002472        9c:   ldr     ip, [pc, #104]
+000002475              read    addr 28001240, data 00000600 to r5
+000002481              read    addr 10c, data 0000ffff to ip
+000002484        a0:   and     r5,  r5,  ip
+000002487        a4:   orr     r7,  r5,  r6
+000002490        a8:   ldr     r8, [r1], #4
+000002496              read    addr 168, data 01000000 to r8
+000002499        ac:   cmp     r7,  r8
+000002502        b0:  -movne   r10, #100
+000002505        b4:  -bne     c4
+000002508        b8:   cmp     r1,  r2
+000002511        bc:   blt     90
+000002513              jump    from bc to 90, r0 28001244, r1 0000016c
+000002520        90:   ldr     r4, [r0, #4]!
+000002526              read    addr 28001248, data 8f021800 to r4
+000002529        94:   mov     r6,  r4, lsl #16
+000002532        98:   ldr     r5, [r3], #4
+000002535        9c:   ldr     ip, [pc, #104]
+000002538              read    addr 28001244, data 00000100 to r5
+000002544              read    addr 10c, data 0000ffff to ip
+000002547        a0:   and     r5,  r5,  ip
+000002550        a4:   orr     r7,  r5,  r6
+000002553        a8:   ldr     r8, [r1], #4
+000002559              read    addr 16c, data 18000000 to r8
+000002562        ac:   cmp     r7,  r8
+000002565        b0:  -movne   r10, #100
+000002568        b4:  -bne     c4
+000002571        b8:   cmp     r1,  r2
+000002574        bc:   blt     90
+000002576              jump    from bc to 90, r0 28001248, r1 00000170
+000002583        90:   ldr     r4, [r0, #4]!
+000002589              read    addr 2800124c, data 0000025b to r4
+000002592        94:   mov     r6,  r4, lsl #16
+000002595        98:   ldr     r5, [r3], #4
+000002598        9c:   ldr     ip, [pc, #104]
+000002601              read    addr 28001248, data 8f021800 to r5
+000002607              read    addr 10c, data 0000ffff to ip
+000002610        a0:   and     r5,  r5,  ip
+000002613        a4:   orr     r7,  r5,  r6
+000002616        a8:   ldr     r8, [r1], #4
+000002622              read    addr 170, data 025b8f02 to r8
+000002625        ac:   cmp     r7,  r8
+000002628        b0:  -movne   r10, #100
+000002631        b4:  -bne     c4
+000002634        b8:   cmp     r1,  r2
+000002637        bc:   blt     90
+000002639              jump    from bc to 90, r0 2800124c, r1 00000174
+000002646        90:   ldr     r4, [r0, #4]!
+000002652              read    addr 28001250, data 31700200 to r4
+000002655        94:   mov     r6,  r4, lsl #16
+000002658        98:   ldr     r5, [r3], #4
+000002661        9c:   ldr     ip, [pc, #104]
+000002664              read    addr 2800124c, data 0000025b to r5
+000002670              read    addr 10c, data 0000ffff to ip
+000002673        a0:   and     r5,  r5,  ip
+000002676        a4:   orr     r7,  r5,  r6
+000002679        a8:   ldr     r8, [r1], #4
+000002685              read    addr 174, data 02000000 to r8
+000002688        ac:   cmp     r7,  r8
+000002691        b0:  -movne   r10, #100
+000002694        b4:  -bne     c4
+000002697        b8:   cmp     r1,  r2
+000002700        bc:   blt     90
+000002702              jump    from bc to 90, r0 28001250, r1 00000178
+000002709        90:   ldr     r4, [r0, #4]!
+000002715              read    addr 28001254, data 00000000 to r4
+000002718        94:   mov     r6,  r4, lsl #16
+000002721        98:   ldr     r5, [r3], #4
+000002724        9c:   ldr     ip, [pc, #104]
+000002727              read    addr 28001250, data 31700200 to r5
+000002733              read    addr 10c, data 0000ffff to ip
+000002736        a0:   and     r5,  r5,  ip
+000002739        a4:   orr     r7,  r5,  r6
+000002742        a8:   ldr     r8, [r1], #4
+000002748              read    addr 178, data 00003170 to r8
+000002751        ac:   cmp     r7,  r8
+000002754        b0:  -movne   r10, #100
+000002757        b4:  -bne     c4
+000002760        b8:   cmp     r1,  r2
+000002763        bc:   blt     90
+000002765              jump    from bc to 90, r0 28001254, r1 0000017c
+000002772        90:   ldr     r4, [r0, #4]!
+000002778              read    addr 28001258, data 00000000 to r4
+000002781        94:   mov     r6,  r4, lsl #16
+000002784        98:   ldr     r5, [r3], #4
+000002787        9c:   ldr     ip, [pc, #104]
+000002790              read    addr 28001254, data 00000000 to r5
+000002796              read    addr 10c, data 0000ffff to ip
+000002799        a0:   and     r5,  r5,  ip
+000002802        a4:   orr     r7,  r5,  r6
+000002805        a8:   ldr     r8, [r1], #4
+000002811              read    addr 17c, data 00000000 to r8
+000002814        ac:   cmp     r7,  r8
+000002817        b0:  -movne   r10, #100
+000002820        b4:  -bne     c4
+000002823        b8:   cmp     r1,  r2
+000002826        bc:   blt     90
+000002828              jump    from bc to 90, r0 28001258, r1 00000180
+000002835        90:   ldr     r4, [r0, #4]!
+000002841              read    addr 2800125c, data 00000000 to r4
+000002844        94:   mov     r6,  r4, lsl #16
+000002847        98:   ldr     r5, [r3], #4
+000002850        9c:   ldr     ip, [pc, #104]
+000002853              read    addr 28001258, data 00000000 to r5
+000002859              read    addr 10c, data 0000ffff to ip
+000002862        a0:   and     r5,  r5,  ip
+000002865        a4:   orr     r7,  r5,  r6
+000002868        a8:   ldr     r8, [r1], #4
+000002874              read    addr 180, data 00000000 to r8
+000002877        ac:   cmp     r7,  r8
+000002880        b0:  -movne   r10, #100
+000002883        b4:  -bne     c4
+000002886        b8:   cmp     r1,  r2
+000002889        bc:   blt     90
+000002891              jump    from bc to 90, r0 2800125c, r1 00000184
+000002898        90:   ldr     r4, [r0, #4]!
+000002904              read    addr 28001260, data 00000000 to r4
+000002907        94:   mov     r6,  r4, lsl #16
+000002910        98:   ldr     r5, [r3], #4
+000002913        9c:   ldr     ip, [pc, #104]
+000002916              read    addr 2800125c, data 00000000 to r5
+000002922              read    addr 10c, data 0000ffff to ip
+000002925        a0:   and     r5,  r5,  ip
+000002928        a4:   orr     r7,  r5,  r6
+000002931        a8:   ldr     r8, [r1], #4
+000002937              read    addr 184, data 00000000 to r8
+000002940        ac:   cmp     r7,  r8
+000002943        b0:  -movne   r10, #100
+000002946        b4:  -bne     c4
+000002949        b8:   cmp     r1,  r2
+000002952        bc:   blt     90
+000002954              jump    from bc to 90, r0 28001260, r1 00000188
+000002961        90:   ldr     r4, [r0, #4]!
+000002967              read    addr 28001264, data 00000000 to r4
+000002970        94:   mov     r6,  r4, lsl #16
+000002973        98:   ldr     r5, [r3], #4
+000002976        9c:   ldr     ip, [pc, #104]
+000002979              read    addr 28001260, data 00000000 to r5
+000002985              read    addr 10c, data 0000ffff to ip
+000002988        a0:   and     r5,  r5,  ip
+000002991        a4:   orr     r7,  r5,  r6
+000002994        a8:   ldr     r8, [r1], #4
+000003000              read    addr 188, data 00000000 to r8
+000003003        ac:   cmp     r7,  r8
+000003006        b0:  -movne   r10, #100
+000003009        b4:  -bne     c4
+000003012        b8:   cmp     r1,  r2
+000003015        bc:   blt     90
+000003017              jump    from bc to 90, r0 28001264, r1 0000018c
+000003024        90:   ldr     r4, [r0, #4]!
+000003030              read    addr 28001268, data 00000000 to r4
+000003033        94:   mov     r6,  r4, lsl #16
+000003036        98:   ldr     r5, [r3], #4
+000003039        9c:   ldr     ip, [pc, #104]
+000003042              read    addr 28001264, data 00000000 to r5
+000003048              read    addr 10c, data 0000ffff to ip
+000003051        a0:   and     r5,  r5,  ip
+000003054        a4:   orr     r7,  r5,  r6
+000003057        a8:   ldr     r8, [r1], #4
+000003063              read    addr 18c, data 00000000 to r8
+000003066        ac:   cmp     r7,  r8
+000003069        b0:  -movne   r10, #100
+000003072        b4:  -bne     c4
+000003075        b8:   cmp     r1,  r2
+000003078        bc:   blt     90
+000003080              jump    from bc to 90, r0 28001268, r1 00000190
+000003087        90:   ldr     r4, [r0, #4]!
+000003093              read    addr 2800126c, data 00012400 to r4
+000003096        94:   mov     r6,  r4, lsl #16
+000003099        98:   ldr     r5, [r3], #4
+000003102        9c:   ldr     ip, [pc, #104]
+000003105              read    addr 28001268, data 00000000 to r5
+000003111              read    addr 10c, data 0000ffff to ip
+000003114        a0:   and     r5,  r5,  ip
+000003117        a4:   orr     r7,  r5,  r6
+000003120        a8:   ldr     r8, [r1], #4
+000003126              read    addr 190, data 24000000 to r8
+000003129        ac:   cmp     r7,  r8
+000003132        b0:  -movne   r10, #100
+000003135        b4:  -bne     c4
+000003138        b8:   cmp     r1,  r2
+000003141        bc:   blt     90
+000003143              jump    from bc to 90, r0 2800126c, r1 00000194
+000003150        90:   ldr     r4, [r0, #4]!
+000003156              read    addr 28001270, data 3ed50107 to r4
+000003159        94:   mov     r6,  r4, lsl #16
+000003162        98:   ldr     r5, [r3], #4
+000003165        9c:   ldr     ip, [pc, #104]
+000003168              read    addr 2800126c, data 00012400 to r5
+000003174              read    addr 10c, data 0000ffff to ip
+000003177        a0:   and     r5,  r5,  ip
+000003180        a4:   orr     r7,  r5,  r6
+000003183        a8:   ldr     r8, [r1], #4
+000003189              read    addr 194, data 01070001 to r8
+000003192        ac:   cmp     r7,  r8
+000003195        b0:  -movne   r10, #100
+000003198        b4:  -bne     c4
+000003201        b8:   cmp     r1,  r2
+000003204        bc:   blt     90
+000003206              jump    from bc to 90, r0 28001270, r1 00000198
+000003213        90:   ldr     r4, [r0, #4]!
+000003219              read    addr 28001274, data 00000014 to r4
+000003222        94:   mov     r6,  r4, lsl #16
+000003225        98:   ldr     r5, [r3], #4
+000003228        9c:   ldr     ip, [pc, #104]
+000003231              read    addr 28001270, data 3ed50107 to r5
+000003237              read    addr 10c, data 0000ffff to ip
+000003240        a0:   and     r5,  r5,  ip
+000003243        a4:   orr     r7,  r5,  r6
+000003246        a8:   ldr     r8, [r1], #4
+000003252              read    addr 198, data 00143ed5 to r8
+000003255        ac:   cmp     r7,  r8
+000003258        b0:  -movne   r10, #100
+000003261        b4:  -bne     c4
+000003264        b8:   cmp     r1,  r2
+000003267        bc:   blt     90
+000003269              jump    from bc to 90, r0 28001274, r1 0000019c
+000003276        90:   ldr     r4, [r0, #4]!
+000003282              read    addr 28001278, data 3c7f0000 to r4
+000003285        94:   mov     r6,  r4, lsl #16
+000003288        98:   ldr     r5, [r3], #4
+000003291        9c:   ldr     ip, [pc, #104]
+000003294              read    addr 28001274, data 00000014 to r5
+000003300              read    addr 10c, data 0000ffff to ip
+000003303        a0:   and     r5,  r5,  ip
+000003306        a4:   orr     r7,  r5,  r6
+000003309        a8:   ldr     r8, [r1], #4
+000003315              read    addr 19c, data 00000000 to r8
+000003318        ac:   cmp     r7,  r8
+000003321        b0:  -movne   r10, #100
+000003324        b4:  -bne     c4
+000003327        b8:   cmp     r1,  r2
+000003330        bc:   blt     90
+000003332              jump    from bc to 90, r0 28001278, r1 000001a0
+000003339        90:   ldr     r4, [r0, #4]!
+000003345              read    addr 2800127c, data 657c2c04 to r4
+000003348        94:   mov     r6,  r4, lsl #16
+000003351        98:   ldr     r5, [r3], #4
+000003354        9c:   ldr     ip, [pc, #104]
+000003357              read    addr 28001278, data 3c7f0000 to r5
+000003363              read    addr 10c, data 0000ffff to ip
+000003366        a0:   and     r5,  r5,  ip
+000003369        a4:   orr     r7,  r5,  r6
+000003372        a8:   ldr     r8, [r1], #4
+000003378              read    addr 1a0, data 2c043c7f to r8
+000003381        ac:   cmp     r7,  r8
+000003384        b0:  -movne   r10, #100
+000003387        b4:  -bne     c4
+000003390        b8:   cmp     r1,  r2
+000003393        bc:   blt     90
+000003395              jump    from bc to 90, r0 2800127c, r1 000001a4
+000003402        90:   ldr     r4, [r0, #4]!
+000003408              read    addr 28001280, data 7e876c41 to r4
+000003411        94:   mov     r6,  r4, lsl #16
+000003414        98:   ldr     r5, [r3], #4
+000003417        9c:   ldr     ip, [pc, #104]
+000003420              read    addr 2800127c, data 657c2c04 to r5
+000003426              read    addr 10c, data 0000ffff to ip
+000003429        a0:   and     r5,  r5,  ip
+000003432        a4:   orr     r7,  r5,  r6
+000003435        a8:   ldr     r8, [r1], #4
+000003441              read    addr 1a4, data 6c41657c to r8
+000003444        ac:   cmp     r7,  r8
+000003447        b0:  -movne   r10, #100
+000003450        b4:  -bne     c4
+000003453        b8:   cmp     r1,  r2
+000003456        bc:   blt     90
+000003458              jump    from bc to 90, r0 28001280, r1 000001a8
+000003465        90:   ldr     r4, [r0, #4]!
+000003471              read    addr 28001284, data a9288cc3 to r4
+000003474        94:   mov     r6,  r4, lsl #16
+000003477        98:   ldr     r5, [r3], #4
+000003480        9c:   ldr     ip, [pc, #104]
+000003483              read    addr 28001280, data 7e876c41 to r5
+000003489              read    addr 10c, data 0000ffff to ip
+000003492        a0:   and     r5,  r5,  ip
+000003495        a4:   orr     r7,  r5,  r6
+000003498        a8:   ldr     r8, [r1], #4
+000003504              read    addr 1a8, data 8cc37e87 to r8
+000003507        ac:   cmp     r7,  r8
+000003510        b0:  -movne   r10, #100
+000003513        b4:  -bne     c4
+000003516        b8:   cmp     r1,  r2
+000003519        bc:   blt     90
+000003521              jump    from bc to 90, r0 28001284, r1 000001ac
+000003528        90:   ldr     r4, [r0, #4]!
+000003534              read    addr 28001288, data 048e2340 to r4
+000003537        94:   mov     r6,  r4, lsl #16
+000003540        98:   ldr     r5, [r3], #4
+000003543        9c:   ldr     ip, [pc, #104]
+000003546              read    addr 28001284, data a9288cc3 to r5
+000003552              read    addr 10c, data 0000ffff to ip
+000003555        a0:   and     r5,  r5,  ip
+000003558        a4:   orr     r7,  r5,  r6
+000003561        a8:   ldr     r8, [r1], #4
+000003567              read    addr 1ac, data 2340a928 to r8
+000003570        ac:   cmp     r7,  r8
+000003573        b0:  -movne   r10, #100
+000003576        b4:  -bne     c4
+000003579        b8:   cmp     r1,  r2
+000003582        bc:   blt     90
+000003584              jump    from bc to 90, r0 28001288, r1 000001b0
+000003591        90:   ldr     r4, [r0, #4]!
+000003597              read    addr 2800128c, data 7a0e0026 to r4
+000003600        94:   mov     r6,  r4, lsl #16
+000003603        98:   ldr     r5, [r3], #4
+000003606        9c:   ldr     ip, [pc, #104]
+000003609              read    addr 28001288, data 048e2340 to r5
+000003615              read    addr 10c, data 0000ffff to ip
+000003618        a0:   and     r5,  r5,  ip
+000003621        a4:   orr     r7,  r5,  r6
+000003624        a8:   ldr     r8, [r1], #4
+000003630              read    addr 1b0, data 0026048e to r8
+000003633        ac:   cmp     r7,  r8
+000003636        b0:  -movne   r10, #100
+000003639        b4:  -bne     c4
+000003642        b8:   cmp     r1,  r2
+000003645        bc:   blt     90
+000003647              jump    from bc to 90, r0 2800128c, r1 000001b4
+000003654        90:   ldr     r4, [r0, #4]!
+000003660              read    addr 28001290, data 0000ec58 to r4
+000003663        94:   mov     r6,  r4, lsl #16
+000003666        98:   ldr     r5, [r3], #4
+000003669        9c:   ldr     ip, [pc, #104]
+000003672              read    addr 2800128c, data 7a0e0026 to r5
+000003678              read    addr 10c, data 0000ffff to ip
+000003681        a0:   and     r5,  r5,  ip
+000003684        a4:   orr     r7,  r5,  r6
+000003687        a8:   ldr     r8, [r1], #4
+000003693              read    addr 1b4, data ec587a0e to r8
+000003696        ac:   cmp     r7,  r8
+000003699        b0:  -movne   r10, #100
+000003702        b4:  -bne     c4
+000003705        b8:   cmp     r1,  r2
+000003708        bc:   blt     90
+000003710              jump    from bc to 90, r0 28001290, r1 000001b8
+000003717        90:   ldr     r4, [r0, #4]!
+000003723              read    addr 28001294, data 00000000 to r4
+000003726        94:   mov     r6,  r4, lsl #16
+000003729        98:   ldr     r5, [r3], #4
+000003732        9c:   ldr     ip, [pc, #104]
+000003735              read    addr 28001290, data 0000ec58 to r5
+000003741              read    addr 10c, data 0000ffff to ip
+000003744        a0:   and     r5,  r5,  ip
+000003747        a4:   orr     r7,  r5,  r6
+000003750        a8:   ldr     r8, [r1], #4
+000003756              read    addr 1b8, data 00000000 to r8
+000003759        ac:   cmp     r7,  r8
+000003762        b0:  -movne   r10, #100
+000003765        b4:  -bne     c4
+000003768        b8:   cmp     r1,  r2
+000003771        bc:   blt     90
+000003773              jump    from bc to 90, r0 28001294, r1 000001bc
+000003780        90:   ldr     r4, [r0, #4]!
+000003786              read    addr 28001298, data 00000008 to r4
+000003789        94:   mov     r6,  r4, lsl #16
+000003792        98:   ldr     r5, [r3], #4
+000003795        9c:   ldr     ip, [pc, #104]
+000003798              read    addr 28001294, data 00000000 to r5
+000003804              read    addr 10c, data 0000ffff to ip
+000003807        a0:   and     r5,  r5,  ip
+000003810        a4:   orr     r7,  r5,  r6
+000003813        a8:   ldr     r8, [r1], #4
+000003819              read    addr 1bc, data 00080000 to r8
+000003822        ac:   cmp     r7,  r8
+000003825        b0:  -movne   r10, #100
+000003828        b4:  -bne     c4
+000003831        b8:   cmp     r1,  r2
+000003834        bc:   blt     90
+000003836              jump    from bc to 90, r0 28001298, r1 000001c0
+000003843        90:   ldr     r4, [r0, #4]!
+000003849              read    addr 2800129c, data 00000008 to r4
+000003852        94:   mov     r6,  r4, lsl #16
+000003855        98:   ldr     r5, [r3], #4
+000003858        9c:   ldr     ip, [pc, #104]
+000003861              read    addr 28001298, data 00000008 to r5
+000003867              read    addr 10c, data 0000ffff to ip
+000003870        a0:   and     r5,  r5,  ip
+000003873        a4:   orr     r7,  r5,  r6
+000003876        a8:   ldr     r8, [r1], #4
+000003882              read    addr 1c0, data 00080000 to r8
+000003885        ac:   cmp     r7,  r8
+000003888        b0:  -movne   r10, #100
+000003891        b4:  -bne     c4
+000003894        b8:   cmp     r1,  r2
+000003897        bc:  -blt     90
+000003900        c0:   b       d0
+000003902              jump    from c0 to d0, r0 2800129c, r1 000001c4
+000003909        d0:   ldr     r11, [pc, #8]
+000003912        d4:   mov     r10, #17
+000003915              read    addr e0, data f0000000 to r11
+000003918        d8:   str     r10, [r11]
+000003921        dc:   b       d0
